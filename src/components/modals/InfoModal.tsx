@@ -63,16 +63,22 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
                   <div className="mt-2">
                     <p className="text-sm text-gray-500">
                       Guess the password by entering valid words to learn
-                      about the correct letters. Letters will be
-                      highlighted in yellow if they are present in the correct
-                      answer.
+                      about the correct letters. Letters will be highlighted
+                      in yellow if they are present in the correct answer
                     </p>
 
                     &#8203;
 
                     <p className="text-sm text-gray-500">
-                      In this example, the letter A is in the word,
-                      but the other letters are not.
+                      You have unlimited guesses, but will only be able
+                      to see the previous word you guessed.
+                    </p>
+
+                    &#8203;
+
+                    <p className="text-sm text-gray-500">
+                      In this example, the letter A is in the word, but
+                      the other letters are not.
                     </p>
 
                     <div className="flex justify-center mb-1 mt-4">
