@@ -41,16 +41,20 @@ export const getStatuses = (
         // make status absent
         return (charObj[letter] = 'absent')
       }
-
-      if (letter === solution[i]) {
-        //make status correct
-        return (charObj[letter] = 'correct')
+       
+      else {
+          return (charObj[letter] = 'present')
       }
 
-      if (charObj[letter] !== 'correct') {
-        //make status present
-        return (charObj[letter] = 'present')
-      }
+    //   if (letter === solution[i]) {
+    //     //make status correct
+    //     return (charObj[letter] = 'correct')
+    //   }
+
+    //   if (charObj[letter] !== 'correct') {
+    //     //make status present
+    //     return (charObj[letter] = 'present')
+    //   }
     })
   })
 

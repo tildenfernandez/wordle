@@ -62,43 +62,26 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
                   </Dialog.Title>
                   <div className="mt-2">
                     <p className="text-sm text-gray-500">
-                      Guess the WORDLE in 6 tries. After each guess, the color
-                      of the tiles will change to show how close your guess was
-                      to the word.
+                      Guess the password by entering valid words to learn
+                      about the correct letters. Letters will be
+                      highlighted in yellow if they are present in the correct
+                      answer.
                     </p>
 
-                    <div className="flex justify-center mb-1 mt-4">
-                      <Cell value="W" status="correct" />
-                      <Cell value="E" />
-                      <Cell value="A" />
-                      <Cell value="R" />
-                      <Cell value="Y" />
-                    </div>
+                    &#8203;
+
                     <p className="text-sm text-gray-500">
-                      The letter W is in the word and in the correct spot.
+                      In this example, the letter A is in the word,
+                      but the other letters are not.
                     </p>
 
                     <div className="flex justify-center mb-1 mt-4">
-                      <Cell value="P" />
-                      <Cell value="I" />
-                      <Cell value="L" status="present" />
-                      <Cell value="O" />
-                      <Cell value="T" />
-                    </div>
-                    <p className="text-sm text-gray-500">
-                      The letter L is in the word but in the wrong spot.
-                    </p>
-
-                    <div className="flex justify-center mb-1 mt-4">
-                      <Cell value="V" />
-                      <Cell value="A" />
-                      <Cell value="G" />
+                      <Cell value="V" status="absent" />
+                      <Cell value="A" status="present" />
+                      <Cell value="G" status="absent" />
                       <Cell value="U" status="absent" />
-                      <Cell value="E" />
+                      <Cell value="E" status="absent" />
                     </div>
-                    <p className="text-sm text-gray-500">
-                      The letter U is not in the word in any spot.
-                    </p>
                   </div>
                 </div>
               </div>
